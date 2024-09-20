@@ -36,37 +36,41 @@
     <header class="header">
       <div class="container">
         <div class="header_section">
-          <input id="check" type="checkbox">
+          <input id="check" type="checkbox" />
           <label for="check">
             <div>
-              <i class="fa-solid fa-bars"  id="ham-icon"></i>
+              <i class="fa-solid fa-bars" id="ham-icon"></i>
               <i class="fa-solid fa-xmark" id="close"></i>
             </div>
           </label>
-        
-            <div class="brandname">Brandname</div>
-            <nav class="nav_bar">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-  
 
-              <div class="header_buttons">
-                <button class="button transparent_button">Login</button>
-    
-                <button class="button filled_button arrow_icon">JOIN US</button>
-              </div>
+          <div class="brandname">Brandname</div>
+          <nav class="nav_bar">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li class="dropdown">
+                
+                <a href="#">Product</a>
+                <ul class="dropdown_menu">
 
-              
-            </nav>
-            
-          </div>
+                  <li><a href="#">Product 1</a></li>
+                  <li><a href="#">Product 2</a></li>
+                  <li><a href="#">Product 3</a></li>
+                </ul>
+               
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><button class="button transparent_button ham">Login</button></li>
 
-         
-          
+            </ul>
+
+            <div class="header_buttons">
+              <button class="button transparent_button login">Login</button>
+
+              <button class="button filled_button arrow_icon">JOIN US</button>
+            </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -90,51 +94,51 @@
             <img src="images/schoolgirl2.png" alt="schoolgirl2" />
           </div>
         </div>
-
-        <div class="hero_banner_section">
-          <div class="hero_banner">
-            <div class="hero_banner_icon">
-              <span class="material-symbols-outlined"> backpack </span>
-            </div>
-            <h3>Training Courses</h3>
-            <div class="line_block_small"></div>
-            <p>
-              The gradual accumulation of<br />
-              information about atomic and<br />
-              small-scale behaviour...
-            </p>
-          </div>
-
-          <div class="hero_banner">
-            <div class="hero_banner_icon">
-              <span class="material-symbols-outlined"> backpack </span>
-            </div>
-            <h3>Training Courses</h3>
-            <div class="line_block_small"></div>
-            <p>
-              The gradual accumulation of<br />
-              information about atomic and<br />
-              small-scale behaviour...
-            </p>
-          </div>
-
-          <div class="hero_banner">
-            <div class="hero_banner_icon">
-              <span class="material-symbols-outlined"> book_3 </span>
-            </div>
-            <h3>Expert Instruction</h3>
-            <div class="line_block_small"></div>
-            <p>
-              The gradual accumulation of<br />
-              information about atomic and<br />
-              small-scale behaviour...
-            </p>
-          </div>
-        </div>
       </div>
     </div>
 
     <div class="container">
+      <div class="hero_banner_section">
+        <div class="hero_banner">
+          <div class="hero_banner_icon">
+            <span class="material-symbols-outlined"> backpack </span>
+          </div>
+          <h3>Training Courses</h3>
+          <div class="line_block_small"></div>
+          <p>
+            The gradual accumulation of<br />
+            information about atomic and<br />
+            small-scale behaviour...
+          </p>
+        </div>
+
+        <div class="hero_banner">
+          <div class="hero_banner_icon">
+            <span class="material-symbols-outlined"> backpack </span>
+          </div>
+          <h3>Training Courses</h3>
+          <div class="line_block_small"></div>
+          <p>
+            The gradual accumulation of<br />
+            information about atomic and<br />
+            small-scale behaviour...
+          </p>
+        </div>
+
+        <div class="hero_banner">
+          <div class="hero_banner_icon">
+            <span class="material-symbols-outlined"> book_3 </span>
+          </div>
+          <h3>Expert Instruction</h3>
+          <div class="line_block_small"></div>
+          <p>
+            The gradual accumulation of<br />
+            information about atomic and<br />
+            small-scale behaviour...
+          </p>
+        </div>
+      </div>
+
       <div class="testimonials">
         <div class="testimonials_block">
           <h1>15K</h1>
@@ -153,7 +157,9 @@
           <h5>Top Partners</h5>
         </div>
       </div>
+    </div>
 
+    <div class="container">
       <div class="section2">
         <div class="section2_text_section">
           <div class="line_block_large"></div>
@@ -598,23 +604,25 @@
             </ul>
           </div>
         </div>
-      </div>
-    </footer>
 
-    <div class="footer_end">
-      <div class="container">
-        <div class="footer_end_sections">
-          <h6>Made With Love By Figmaland All Right Reserved</h6>
+        </div>
 
-          <div class="socialmedia_icons">
-            <i class="fa-brands fa-facebook"></i>
+        <div class="footer_end">
 
-            <i class="fa-brands fa-instagram"></i>
+          <div class="container">
+          <div class="footer_end_sections">
+            <h6>Made With Love By Figmaland All Right Reserved</h6>
 
-            <i class="fa-brands fa-twitter"></i>
+            <div class="socialmedia_icons">
+              <i class="fa-brands fa-facebook"></i>
+
+              <i class="fa-brands fa-instagram"></i>
+
+              <i class="fa-brands fa-twitter"></i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

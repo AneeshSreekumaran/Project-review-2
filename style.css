@@ -18,6 +18,8 @@ p {
 ul {
   list-style-type: none;
   gap: 20px;
+  display: flex;
+  align-items: center;
 }
 :root {
   --primary-color: #96bb7c;
@@ -98,6 +100,7 @@ h6 {
   color: white;
   border-style: none;
   border-radius: 5px;
+  white-space: nowrap;
 }
 
 .transparent_button {
@@ -124,11 +127,17 @@ h6 {
 
 .header {
   background: #fff2f3;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
+
+
+
 .header_section {
   display: flex;
   align-items: center;
-  
+  gap: 10px;
   padding: 15px 0px 15px 0px;
 }
 
@@ -143,20 +152,57 @@ h6 {
   justify-content: space-around;
 }
 
+
+
+.nav_bar .dropdown_menu{
+
+  position: absolute;
+  width: 135px;
+  flex-direction: column;
+  background: #bdbdbd;
+  align-items: flex-start;
+  padding: 0px;
+  display: none;
+  }
+
 .nav_bar ul {
   list-style-type: none;
   display: flex;
   gap: 10px;
 }
 
+.dropdown:hover .dropdown_menu{
+  display: flex;
+}
+
+
+.dropdown_menu li a:hover{
+  color: #96bb7c;
+}
+
+
+
+
+
 .header_buttons {
   display: flex;
   align-items: center;
 }
 
+
+
+
+
+.ham{
+  display: none;
+}
+
+
+
 .hero_page {
   background: #fff2f3;
-  padding-bottom: 120px;
+  padding: 80px 0px 180px 0px;
+
 }
 
 .hero_section {
@@ -166,8 +212,9 @@ h6 {
 .textsection_hero {
   display: flex;
   flex-direction: column;
-  gap: 35px;
-  padding-bottom: 50px;
+  gap: 30px;
+  justify-content: center;
+  
 }
 
 .hero_image img {
@@ -176,9 +223,9 @@ h6 {
 .hero_banner_section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  position: absolute;
+  
   gap: 10px;
-  top: 500px;
+  margin-top: -180px;
 }
 
 .hero_banner {
@@ -202,7 +249,9 @@ h6 {
 }
 
 .testimonials {
-  display: flex;
+  display: grid;
+  
+  grid-template-columns: repeat(4, 1fr);
   padding: 180px 0px 80px 0px;
   justify-content: space-evenly;
 }
@@ -217,6 +266,7 @@ h6 {
   line-height: 24px;
   letter-spacing: 0.1px;
   color: #252b42;
+  text-align: center;
 }
 .testimonials_block {
   display: flex;
@@ -272,7 +322,7 @@ h6 {
 
 .section3 {
   background: #fff2f3;
-  /* background: red; */
+  
   padding: 160px 0px 160px 0px;
 }
 
@@ -282,23 +332,29 @@ h6 {
   gap: 10px;
 }
 
+.section3_banner{
+
+  max-width: 425px;
+}
+
 .section3_banner_imagesection {
   position: relative;
   justify-content: center;
   align-items: center;
 }
 
-.section3_banner_image {
-  width: 100%;
-  object-fit: contain;
-  /* height: 300px; */
-  /* object-fit: contain; */
+.section3_banner_imagesection img{
+  width: 100% ;
+  height: 300px;
+
 }
+
+
 .cart_buttons {
   display: flex;
   position: absolute;
   bottom: 30px;
-  left: 70px;
+  left: 23%;
   gap: 15px;
 }
 
@@ -428,7 +484,7 @@ h6 {
 
 .section4_bannersection {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3,1fr);
   gap: 10px;
 }
 
@@ -462,13 +518,13 @@ h6 {
   color: #f3cd03;
 }
 
-.section5 {
+.section5 { 
   padding: 112px 0px 112px 0px;
 }
 
 .section5_bannersection {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns:repeat(4, 1fr) ;
   gap: 30px;
 }
 
@@ -519,6 +575,7 @@ h6 {
 }
 .newsletter {
   display: flex;
+  justify-content: center;
 }
 
 .newsletter form {
@@ -529,7 +586,7 @@ h6 {
 }
 
 .txt {
-  width: 688px;
+  width: 538px;
   height: 51px;
   outline: none;
   padding-left: 25px;
@@ -551,6 +608,9 @@ h6 {
 .footer_ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .footer_ul_head {
@@ -562,11 +622,14 @@ h6 {
 }
 .footer_section1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
 }
 
 .footer_end {
   background: #fafafa;
+  
 }
 
 .footer_end h6 {
@@ -584,6 +647,8 @@ h6 {
   align-items: center;
   justify-content: space-around;
 }
+
+
 #close {
   display: none;
 }

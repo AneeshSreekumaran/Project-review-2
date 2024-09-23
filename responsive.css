@@ -261,7 +261,8 @@
   }
 
   .section2_text_section {
-    gap: 20px;
+      gap: 15px;
+      align-items: center;  
   }
 
   .section5_bannersection {
@@ -291,6 +292,29 @@
   }
   .testimonials h1 {
     font-size: 40px;
+}
+
+
+
+.hero_banner_icon {
+  height: 40px;
+  width: 40px;
+}
+
+.hero_banner {
+  max-width: 350px;
+  align-items: center;
+}
+
+
+a, p, h2 {
+ 
+  text-align: center;
+}
+
+h3{
+  line-height: 10px;
+  font-size: 18px;
 }
 
 }
